@@ -15,7 +15,7 @@ Here is a quick example of how `myMap` should work:
 const arr = [1, 2, 3];
 const callback = (el) => el * 2;
 
-console.log(myMap(arr, callback)); // prints [2,4,6]
+console.log(myMap(arr, callback)); // prints [2,4,6]4
 console.log(arr); // prints [1,2,3]
 ```
 
@@ -45,10 +45,14 @@ tracking when a function has been called or not.
 Connect the `chai-spies` plug-in to be used in the `chai` assertion module at
 the top of the file with the following lines:
 
+
+
 ```js
 const spies = require("chai-spies");
 chai.use(spies);
 ```
+
+
 
 Use the `chai.spy.on` function for spec 2 to inspect whether or not the built-in
 `Array.map` has been called on the array. Take a look at the
